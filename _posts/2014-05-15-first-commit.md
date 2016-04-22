@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Commit
+title: Sobin is genious
 description: "Its ON, baby"
 headline: "Let's Fire up the Engines"
 categories: personal
