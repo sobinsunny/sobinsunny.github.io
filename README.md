@@ -4,7 +4,7 @@ A modern, professional portfolio website showcasing my experience as a Software 
 
 ## 🌐 Live Demo
 
-Visit the live site: [sobines.github.io](https://sobines.github.io) (Update with your actual GitHub Pages URL)
+Visit the live site: [sobinsunny.github.io](https://sobinsunny.github.io) (Update with your actual GitHub Pages URL)
 
 ## 🎨 Features
 
