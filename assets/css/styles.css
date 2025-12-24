@@ -1575,6 +1575,155 @@ body {
 }
 
 /* =====================================================
+   RECOMMENDATIONS SECTION
+   ===================================================== */
+.recommendations {
+    padding: 80px 24px 120px;
+    background: radial-gradient(circle at 70% 30%, rgba(59, 130, 246, 0.03), transparent 60%);
+}
+
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.rec-card {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.rec-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 20px 40px rgba(31, 38, 135, 0.1);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.rec-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rec-quote-icon {
+    color: var(--primary);
+    opacity: 0.2;
+}
+
+.rec-quote-icon .material-icons-round {
+    font-size: 40px;
+}
+
+.rec-stars {
+    display: flex;
+    color: #f59e0b;
+    /* Amber/Gold */
+}
+
+.rec-stars .material-icons-round {
+    font-size: 18px;
+}
+
+.rec-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 30px;
+    flex: 1;
+}
+
+.rec-author {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.placeholder-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--bg-tertiary), #cbd5e1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.author-info h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: var(--text-primary);
+}
+
+.author-info p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.linkedin-badge {
+    margin-left: auto;
+    color: #0077b5;
+    font-size: 24px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.linkedin-badge:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.linkedin-cta-wrapper {
+    text-align: center;
+}
+
+.btn-linkedin {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #0077b5;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: var(--transition);
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0, 119, 181, 0.25);
+    font-size: 1rem;
+}
+
+.btn-linkedin:hover {
+    background: #006396;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0, 119, 181, 0.35);
+}
+
+.btn-linkedin i {
+    font-size: 1.2rem;
+}
+
+/* =====================================================
    CONTACT SECTION - Professional Glass Design
    ===================================================== */
 .contact {
