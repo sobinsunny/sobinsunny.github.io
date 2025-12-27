@@ -638,6 +638,34 @@ body {
     box-shadow: 0 12px 32px rgba(31, 38, 135, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.6);
 }
 
+/* Mobile Smoothness & Overflow Fixes */
+@media (max-width: 480px) {
+
+    /* Reduce extensive blur for performance */
+    .glass,
+    .glass-strong,
+    .nav-bar,
+    .stat-card,
+    .hero-image,
+    .floating-card,
+    .btn-ghost,
+    .about-card,
+    .timeline-card,
+    .rec-card {
+        backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+    }
+
+    /* Reduce orb size and blur radius */
+    .gradient-orb {
+        filter: blur(60px);
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+}
+
 /* Hero Right - Image with Light Glass Effect */
 /* Hero Right - Image with Light Glass Effect */
 .hero-right {
@@ -650,6 +678,26 @@ body {
     position: relative;
     width: 380px;
     height: 380px;
+    max-width: 100%;
+}
+
+@media (max-width: 480px) {
+    .hero-image-wrapper {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .image-glow {
+        width: 240px;
+        height: 240px;
+    }
+
+    .hero-image {
+        width: 240px;
+        height: 240px;
+        margin: 30px auto;
+    }
 }
 
 .image-glow {
@@ -807,6 +855,44 @@ body {
 
     .card-7 {
         left: -20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .floating-card {
+        width: 42px;
+        height: 42px;
+    }
+
+    /* Pull cards closer to center to avoid overflow */
+    .card-2 {
+        right: -10px;
+    }
+
+    .card-7 {
+        left: -10px;
+    }
+
+    .card-1 {
+        left: 0px;
+    }
+
+    .card-3 {
+        left: 0px;
+        bottom: 10px;
+    }
+
+    .card-4 {
+        right: 0px;
+    }
+
+    .card-6 {
+        right: 0px;
+        bottom: 10px;
+    }
+
+    .card-5 {
+        top: -20px;
     }
 }
 
@@ -1289,8 +1375,8 @@ body {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
     margin-bottom: 70px;
 }
 
@@ -1307,7 +1393,7 @@ body {
 }
 
 .skill-category {
-    padding: 32px;
+    padding: 20px;
     border-radius: var(--radius-ios);
     background: rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(40px) saturate(180%);
@@ -1584,7 +1670,7 @@ body {
 
 .recommendations-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin-bottom: 50px;
 }
